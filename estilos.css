@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+
+}
+.banner{ 
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(imgondo.jpeg);
+    background-size: cover;
+    
+    }
+   
+   
+    
+
+.banner2{
+    min-height: 100vh;
+    background: #fff;
+}
+.banner .container { 
+    max-width: 900px;
+    text-align: center;
+}
+.banner .container h2 {
+    position: relative;
+    left: -70%;
+    bottom: 30%;
+    font-size: 2.5rem   ;
+    color:#fff;
+    font-weight: 300;
+    animation: aparecer;
+    animation-duration: 3s;
+
+    
+ 
+}
+@keyframes aparecer {
+    0% { 
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+.sueña ,.cafe {
+    font-weight: 700;
+    font-size: 3rem;
+    }
+.banner .container p{
+    font-size: 1rem;
+    color: #fff;
+    
+}
+
+.btn { 
+   position: absolute;
+   left: 23%;
+   bottom: 20%;
+    font-size: 1rem;
+    color: #fff;
+    background: #ff0157;
+    
+    padding: 10px 30px;
+  transition: 0.5;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.btn:hover{
+    letter-spacing: 5px;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header .logo { 
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+}
+header .logo span { 
+    color: #ff0157;
+}
+header .navigation{ 
+    display: flex;
+    position: relative;
+}
+header .navigation li{ 
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a { 
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    
+}
+header .navigation li a:hover{
+    color: #ff0157;
+}
+.grid
+{
+    padding: 50px 0;
+    place-items: center;
+    place-content: center;
+    color: #000;
+    display: grid;
+    
+}
+
+.grid__menu { 
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-container{ 
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 10em 10em;
+    grid-template-rows: repeat(4,10em);
+    gap: 1em;
+}
+.grid__imgs{ 
+    width: 100%;
+   
+    height: 100%;
+    
+    
+    
+}
+.span-grid{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: 500;
+    opacity: 0;
+    
+}
+.span-grid:hover{
+    color:#fff;
+    display: flex;
+    opacity: 1;
+    
+}
+.img--1{ 
+    grid-column: span 2;
+    background: url(imagenesgrid/latte.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.img--2{
+    background: url(imagenesgrid/lagrima.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img--3{
+    background: url(imagenesgrid/cafenegro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img--4{
+    background: url(imagenesgrid/cappuchino.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.img--5{
+    background: url(imagenesgrid/cortado.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img--6{
+    background: url(imagenesgrid/irlandes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column:span 2 ;
+}
+.img--1:hover{
+    opacity: 0.7;
+}
+.img--2:hover{
+    opacity: 0.7;
+}
+
+.img--3:hover{
+    opacity: 0.7;
+}
+
+.img--4:hover{
+    opacity: 0.7;
+}
+
+.img--5:hover{
+    opacity: 0.7;
+}
+
+.img--6:hover{
+    opacity: 0.7;
+}
+.nos-section { 
+    height: 100vh;
+    background: linear-gradient(to right,  rgba(87, 22, 2, 0.8), #ebf8e1, #f69d3c);
+}
+
